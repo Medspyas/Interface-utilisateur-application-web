@@ -1,0 +1,137 @@
+/* Conteneur principal*/
+.conteneur{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* Conteneur global de l'en-tête */
+
+.en-tête{
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+/* Titre meilleur film */
+#meilleur-film h2 {
+    font-family: 'Oswald',sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color:#000000;
+    margin-bottom: 20px;
+}
+
+/* Rectangle de fond avec bordure */
+.sous-en-tête{
+    background-color: #61787F;
+    max-width: 837px;
+    width: 100%;
+    height: 122px;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo {
+    width: 127px;
+    height: 94px;
+    margin-right: 20px;
+    
+}
+
+/* Texte de l'en-tête*/
+.en-tête-texte{
+    font-size: 40px;
+    font-family: 'Oswald' , sans-serif;
+    font-weight: 300;
+    color: #FFFFFF
+}
+
+/* Section principale meilleur film*/
+#meilleur-film{
+    padding: 20px 0;
+}
+
+/* Conteneur image et détails*/
+
+.meilleur-film-block{
+    display: flex;
+    align-items: flex-start;
+    border: 6px solid #000000;
+    padding:  10px 20px;
+    background-color: #FFFFFF;
+    max-width: 835px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/*Syle image du film*/
+
+.meilleur-film-image{
+    width: 227px;
+    height: 334px;
+    opacity: 1;
+    margin-right: 20px;
+    margin-top: 10px;    
+   }
+
+/* Titre du film */
+
+.meilleur-film-titre{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: #000000;
+    margin: 0;
+    padding: 0;     
+    line-height: 1;
+    
+}
+
+/* resume du film */
+
+.meilleur-film-resume{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    color: #000000;
+    margin: 10px 0 20px 0;
+    line-height: 1.2;
+}
+
+/* Contenu details des films */
+
+.meilleur-film-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;    
+}
+
+/* Boutton détails*/
+
+.meilleur-film-boutton{
+    align-self: flex-end;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    color: #FFFFFF;
+    background-color: #FA0B0B;
+    border: none;
+    padding: 10px 20px;
+    width: 166px;
+    height: 68px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
