@@ -1,18 +1,6 @@
-/* Conteneur principal*/
-.conteneur{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
 
 
-/* Conteneur global de l'en-tête */
 
-.en-tête{
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
 
 /* Titre meilleur film */
 #meilleur-film h2 {
@@ -20,7 +8,8 @@
     font-weight: 600;
     font-size: 48px;
     color:#000000;
-    margin-bottom: 20px;
+    margin-top: 30px !important;    
+    margin-bottom: 20px !important;
 }
 
 /* Rectangle de fond avec bordure */
@@ -29,10 +18,11 @@
     max-width: 837px;
     width: 100%;
     height: 122px;
-    border: 1px solid #000000;
+    border: 1px solid #000000 !important;
     display: flex;
     align-items: center;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 #logo {
@@ -47,91 +37,151 @@
     font-size: 40px;
     font-family: 'Oswald' , sans-serif;
     font-weight: 300;
-    color: #FFFFFF
+    color: #FFFFFF;
+    line-height: 51px;
+    width: 514px;
+    text-align: left;
 }
 
-/* Section principale meilleur film*/
-#meilleur-film{
-    padding: 20px 0;
-}
+
 
 /* Conteneur image et détails*/
-
-.meilleur-film-block{
-    display: flex;
-    align-items: flex-start;
-    border: 6px solid #000000;
-    padding:  10px 20px;
+.meilleur-film-block{    
+    width: 835px;
+    height: 369px;
+    border: 6px solid #000000 !important;    
     background-color: #FFFFFF;
+    display: flex;    
     max-width: 835px;
-    margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+    margin: 0 auto 40px auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    padding: 5px 20px 5px 20px;
+    
 }
-
+ 
 /*Syle image du film*/
-
 .meilleur-film-image{
     width: 227px;
-    height: 334px;
-    opacity: 1;
-    margin-right: 20px;
-    margin-top: 10px;    
+    height: 334px;  
+    object-fit: cover;
+    margin-right: 20px;       
    }
 
-/* Titre du film */
+   .card{
+    padding-top: 2px;
+   }
 
+ 
+/* Titre du film */
 .meilleur-film-titre{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 48px;
-    color: #000000;
-    margin: 0;
-    padding: 0;     
-    line-height: 1;
-    
-}
+    color: #000000;  
+    }
 
 /* resume du film */
-
 .meilleur-film-resume{
     font-family: 'Oswald', sans-serif;
-    font-weight: 200;
+    font-weight: 300;
     font-size: 28px;
-    color: #000000;
-    margin: 10px 0 20px 0;
-    line-height: 1.2;
+    color: #000000;    
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-/* Contenu details des films */
-
-.meilleur-film-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;    
-}
 
 /* Boutton détails*/
-
-.meilleur-film-boutton{
-    align-self: flex-end;
+.meilleur-film-boutton{        
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     font-weight: 300;
     color: #FFFFFF;
     background-color: #FA0B0B;
     border: none;
-    padding: 10px 20px;
+    padding: 12px 30px;   
+    border-radius: 25px;           
     width: 166px;
-    height: 68px;
-    border-radius: 25px;
+    height: 68px;       
+    cursor: pointer;   
+    
+}
+
+/* Titre films mieux notés */
+.catégorie-titre{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Grille des films */
+.film-grille{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px
+}
+
+/* Style des films individuels*/
+.fiche-de-film{
+    position: relative;
+    width: 252px;
+    height: 247px;
+    margin: 10px;
+    overflow: hidden;
+
+}
+
+/* Image du film */
+.image-film {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;      
+
+}
+
+.overlay {
+    position: absolute;
+    top: 40px;     
+    width: 252px;
+    height: 102px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
     display: flex;
-    justify-content: center;
+    flex-direction: column;    
     align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+    
+}
+
+.titre-film{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+    align-self: flex-start; 
+    padding-left: 10px;
+}
+
+.film-boutton{
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    background-color: #2D2C2C;
+    border: none;
+    padding: 4px 10px;
+    border-radius: 25px;
+    align-self: flex-end;
     cursor: pointer;
+    width: 81px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    margin-right: 20px;
 }
 
 
