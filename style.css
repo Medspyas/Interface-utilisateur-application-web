@@ -1,5 +1,11 @@
-
-
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 
 /* Titre meilleur film */
@@ -15,8 +21,8 @@
 /* Rectangle de fond avec bordure */
 .sous-en-tête{
     background-color: #61787F;
-    max-width: 837px;
-    width: 100%;
+    max-width: 1000px;
+    width: 837px;
     height: 122px;
     border: 1px solid #000000 !important;
     display: flex;
@@ -47,7 +53,8 @@
 
 /* Conteneur image et détails*/
 .meilleur-film-block{    
-    width: 835px;
+    width: 100%;
+    max-width: 837px;
     height: 369px;
     border: 6px solid #000000 !important;    
     background-color: #FFFFFF;
@@ -111,15 +118,19 @@
 .catégorie-titre{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 48px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 /* Grille des films */
 .film-grille{
+    width: 100%;
+    max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 20px
+    gap: 20px;
+    justify-items: center;
 }
 
 /* Style des films individuels*/
@@ -183,5 +194,41 @@
     justify-content: center;
     text-align: center;
 }
+
+.selecteur-block{
+    position: relative;    
+    display: inline-block;
+}
+
+.titre-autres {
+    margin-right: 20px;
+}
+
+.genre {
+    appearance: none;    
+    width: 404px;
+    height: 78px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 10px;
+    position: relative;    
+}
+
+.triangle{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-100%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 22px solid #000000;
+    pointer-events: none;
+}
+
 
 
