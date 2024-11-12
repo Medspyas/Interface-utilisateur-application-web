@@ -21,10 +21,10 @@
             <h2 class=" meilleur-film-titre">Meilleur film</h2>
             <div class=" card meilleur-film-block mx-auto">
                 <div class="row g-0 align-items-center"> 
-                        <div class="col-md-4">          
+                        <div class="col-4">          
                             <img src="https://fastly.picsum.photos/id/662/200/300.jpg?hmac=jdGUtAdbjqLXAnuKsUBMfmHw-1uVMo7pgJZTdttSRb8" alt="Affcihe du meilleur film" class="meilleur-film-image">
                         </div> 
-                    <div class="col-md-8">
+                    <div class="col-8">
                         <div class=" card-body">
                             <h3 class="meilleur-film-titre">Lorem ipsum.</h3>
                             <p class="meilleur-film-resume">Lorem ipsum odor amet, consectetuer adipiscing elit. Libero primis 
@@ -40,9 +40,9 @@
         </section>
 
         
-        <section id="films-mieux-notés" class="mt-5">
+        <section class="mt-5">
             <h2 class="catégorie-titre">Films les mieux notés</h2>
-            <div class="film-grille">
+            <div id="films-mieux-notés" class="film-grille">
                 <div class="fiche-de-film">
                     <img src="https://fastly.picsum.photos/id/507/200/300.jpg?hmac=v0NKvUrOWTKZuZFmMlLN_7-RdRgeF-qFLeBGXpufxgg" alt=" Affcihe du film 1" class="image-film">
                     <div class="overlay">
@@ -90,8 +90,8 @@
         </section>
         
         <section class="catégorie mt-5">            
-            <h2 class="catégorie-titre">Catégorie  1: Comédie</h2>
-            <div class="film-grille">
+            <h2 class="catégorie-titre">Comédie</h2>
+            <div id="catégorie-comedie" class="film-grille">
                 <div class="fiche-de-film">
                     <img src="https://fastly.picsum.photos/id/1027/200/300.jpg?hmac=WCxdERZ7sgk4jhwpfIZT0M48pctaaDcidOi3dKSHJYY" alt=" Affcihe du film 1" class="image-film">
                     <div class="overlay">
@@ -137,9 +137,9 @@
             </div>            
         </section>
         <section class="catégorie mt-5">            
-            <h2 class="catégorie-titre">Catégorie  2: Drama</h2>
-            <div class="film-grille">
-                <div class="fiche-de-film">
+            <h2 class="catégorie-titre">Crime</h2>
+            <div id="catégorie-crime" class="film-grille">
+                <div id="catégorie-crime" class="fiche-de-film">
                     <img src="https://fastly.picsum.photos/id/1027/200/300.jpg?hmac=WCxdERZ7sgk4jhwpfIZT0M48pctaaDcidOi3dKSHJYY" alt=" Affcihe du film 1" class="image-film">
                     <div class="overlay">
                         <h3 class="titre-film">Titre du film 1</h3>
@@ -195,7 +195,7 @@
                     <span class="triangle"></span>
                 </div>
             </div>
-            <div class="film-grille">
+            <div id="films-autres" class="film-grille">
                 <div class="fiche-de-film">
                     <img src="https://fastly.picsum.photos/id/1027/200/300.jpg?hmac=WCxdERZ7sgk4jhwpfIZT0M48pctaaDcidOi3dKSHJYY" alt=" Affcihe du film 6" class="image-film">
                     <div class="overlay">
@@ -244,8 +244,7 @@
     </div>
 
     <div class="modale" id="modale">
-        <div class="modale-contenu">
-            <span class="fermer-modale">&times;</span>
+        <div class="modale-contenu">            
             <div class="modale-haut">
                 <div class="modale-détails">
                     <h2 class="modale-titre">Titre du film</h2>
@@ -271,5 +270,7 @@
             
         </div>
     </div>
+    
+    <script src="api.js"></script>
 </body>
 </html>

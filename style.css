@@ -8,16 +8,6 @@
 }
 
 
-/* Titre meilleur film */
-#meilleur-film h2 {
-    font-family: 'Oswald',sans-serif;
-    font-weight: 600;
-    font-size: 48px;
-    color:#000000;
-    margin-top: 30px !important;    
-    margin-bottom: 20px !important;
-}
-
 /* Rectangle de fond avec bordure */
 .sous-en-tête{
     background-color: #61787F;
@@ -49,13 +39,26 @@
     text-align: left;
 }
 
+.row{    
+    align-items: stretch;
+}
+
+/* Titre meilleur film */
+#meilleur-film h2 {
+    font-family: 'Oswald',sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color:#000000;
+    margin-top: 30px !important;    
+    margin-bottom: 20px !important;
+}
 
 
 /* Conteneur image et détails*/
 .meilleur-film-block{    
     width: 100%;
     max-width: 837px;
-    height: 369px;
+    height: auto;
     border: 6px solid #000000 !important;    
     background-color: #FFFFFF;
     display: flex;    
@@ -65,17 +68,31 @@
     padding: 5px 20px 5px 20px;
     
 }
+
+
+
+#meilleur-film .card-body{
+    padding-top: 0px !important;
+    margin-top: -10px !important;
+}
+
+#meilleur-film .card-body h3{
+    margin: 0 !important;
+    line-height: 1.2 !important;
+}
+
  
 /*Syle image du film*/
 .meilleur-film-image{
     width: 227px;
     height: 334px;  
     object-fit: cover;
-    margin-right: 20px;       
+    margin-right: 20px;  
+    margin-top: 10px;     
    }
 
-   .card{
-    padding-top: 2px;
+   #meilleur-film .card{
+    padding-top: 0px !important;
    }
 
  
@@ -85,10 +102,13 @@
     font-weight: 600;
     font-size: 48px;
     color: #000000;  
+    margin-top: 0;
+    line-height: 1.2;    
     }
 
 /* resume du film */
 .meilleur-film-resume{
+    min-height: 80px;
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
     font-size: 28px;
@@ -240,8 +260,7 @@
     width: 100%;
     height: 100%;
     justify-content:center;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);    
     align-items: center;
     z-index: 1000;  
 }
@@ -327,7 +346,7 @@
     line-height: 1.6;
 }
 
-.modale-description{
+.modale-description{        
     line-height: 1.6;
 }
 
