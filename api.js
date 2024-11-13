@@ -25,7 +25,7 @@ async function chargeMeilleurFilm() {
 
         
         document.querySelector(".meilleur-film-titre").textContent = "Meilleur film";
-        document.querySelector(".card-body .meilleur-film-titre").textContent = details.title;         
+        document.querySelector(".meilleur-film-détails .meilleur-film-titre").textContent = details.title;         
         document.querySelector(".meilleur-film-resume").textContent = details.long_description;
         document.querySelector(".meilleur-film-image").src = details.image_url; 
         

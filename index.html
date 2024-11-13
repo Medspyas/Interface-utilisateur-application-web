@@ -19,24 +19,20 @@
         
         <section id="meilleur-film" class="mb-5">
             <h2 class=" meilleur-film-titre">Meilleur film</h2>
-            <div class=" card meilleur-film-block mx-auto">
-                <div class="row g-0 align-items-center"> 
-                        <div class="col-4">          
-                            <img src="https://fastly.picsum.photos/id/662/200/300.jpg?hmac=jdGUtAdbjqLXAnuKsUBMfmHw-1uVMo7pgJZTdttSRb8" alt="Affcihe du meilleur film" class="meilleur-film-image">
-                        </div> 
-                    <div class="col-8">
-                        <div class=" card-body">
-                            <h3 class="meilleur-film-titre">Lorem ipsum.</h3>
-                            <p class="meilleur-film-resume">Lorem ipsum odor amet, consectetuer adipiscing elit. Libero primis 
-                                libero fermentum et; sagittis ornare leo tristique? Adipiscing 
-                                sociosqu volutpat ullamcorper per primis est vestibulum nullam.</p>
-                            <div class="d-flex justify-content-end">
-                                <button class="meilleur-film-boutton">Détails</button>
-                            </div>
-                        </div>
-                    </div>  
-                </div>
-            </div>
+            <div class="  meilleur-film-block">                           
+                <img src="https://fastly.picsum.photos/id/662/200/300.jpg?hmac=jdGUtAdbjqLXAnuKsUBMfmHw-1uVMo7pgJZTdttSRb8" alt="Affcihe du meilleur film" class="meilleur-film-image">
+                    
+                <div class="meilleur-film-détails">
+                    <h3 class="meilleur-film-titre">Lorem ipsum.</h3>
+                    <p class="meilleur-film-resume">Lorem ipsum odor amet, consectetuer adipiscing elit.
+                        Lorem ipsum odor amet, consectetuer adipiscing elit.
+                        Lorem ipsum odor amet, consectetuer adipiscing elit.
+                    </p>
+                    
+                    <button class="meilleur-film-boutton">Détails</button>
+                    
+                </div>                
+            </div>            
         </section>
 
         
@@ -86,7 +82,10 @@
                     </div>
                 </div>
             </div>
-                
+            <div class="conteneur-boutton">
+                <button id="voir-plus" class="voir-plus">Voir plus</button>
+                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
+            </div>          
         </section>
         
         <section class="catégorie mt-5">            
@@ -134,7 +133,11 @@
                         <button class="film-boutton">Détails</button>
                     </div>
                 </div>
-            </div>            
+            </div>
+            <div class="conteneur-boutton">
+                <button id="voir-plus" class="voir-plus">Voir plus</button>
+                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
+            </div>                  
         </section>
         <section class="catégorie mt-5">            
             <h2 class="catégorie-titre">Crime</h2>
@@ -181,6 +184,10 @@
                         <button class="film-boutton">Détails</button>
                     </div>
                 </div>
+            </div>
+            <div class="conteneur-boutton">
+                <button id="voir-plus" class="voir-plus">Voir plus</button>
+                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
             </div>            
         </section>
         <section class="catégorie mt-5">
@@ -238,39 +245,43 @@
                         <button class="film-boutton">Détails</button>
                     </div>
                 </div>
-            </div>           
+            </div>
+            <div class="conteneur-boutton">
+                <button id="voir-plus" class="voir-plus">Voir plus</button>
+                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
+            </div>               
         </section>
         
     </div>
 
     <div class="modale" id="modale">
         <div class="modale-contenu">            
-            <div class="modale-haut">
-                <div class="modale-détails">
-                    <h2 class="modale-titre">Titre du film</h2>
-                    <p class="modale-info">
-                        Année - Genres<br>
-                        Classification - Durée (Pays)<br>
-                        IMDB score : 8.1/10
-                    </p>
-                
-                    <p class="modale-réalisateur"><strong>Réalisé par:</strong><br> Nom du réalisateur</p>
-                </div>
-                    <div class="modale-image">
-                        <img src="https://fastly.picsum.photos/id/273/200/300.jpg?hmac=C0IK2DPqr03oiShSklDGIHBzHorcmVrky7A_uvBEzIM" alt="Affcihe-du-film">
-                    </div>
-                </div>
+            <div class="modale-haut">                
+                <h2 class="modale-titre">Titre du film</h2>
+                <p class="modale-info">
+                    Année - Genres<br>
+                    Classification - Durée (Pays)<br>
+                    IMDB score : 8.1/10
+                </p>            
+                <p class="modale-réalisateur"><strong>Réalisé par:</strong><br> Nom du réalisateur</p>  
+                <button class="modale-fermer">&times;</button>              
+            </div>
                 <div class="modale-description">                    
                         <p class="modale-résumé">Lorem ipsum odor amet, consectetuer adipiscing elit. Etiam dis massa ad himenaeos sapien efficitur mus. Erat facilisis habitant erat curabitur viverra. Curae mauris facilisis vivamus nisi, erat ultrices quam. Aaugue justo elit phasellus dolor. Penatibus vulputate efficitur auctor, cursus taciti parturient aliquet. Proin vehicula rhoncus mus iaculis fermentum fermentum nisi sit.</p>
-                        <p class="modale-acteurs">
-                            <strong>Avec:</strong><br> Lorem ipsum odor amet, consectetuer adipiscing elit. Habitant accumsan aliquam sagittis amet sollicitudin magna massa pretium. Mollis mattis lectus vel molestie morbi nostra dui massa feugiat.
-                        </p>
+                        
                 </div>
-                <button class="modale-boutton">Fermer</button>
-            
+                <div class="modale-image">
+                    <img src="https://fastly.picsum.photos/id/273/200/300.jpg?hmac=C0IK2DPqr03oiShSklDGIHBzHorcmVrky7A_uvBEzIM" alt="Affcihe-du-film">
+                </div>
+                <div class="modale-acteurs">
+                    <p>
+                        <strong>Avec:</strong><br> Lorem ipsum odor amet, consectetuer adipiscing elit. Habitant accumsan aliquam sagittis amet sollicitudin magna massa pretium. Mollis mattis lectus vel molestie morbi nostra dui massa feugiat.
+                    </p>
+                </div>
+                <button class="modale-boutton">Fermer</button>            
         </div>
     </div>
     
-    <script src="api.js"></script>
+    <!--<script src="api.js"></script>--->
 </body>
 </html>
