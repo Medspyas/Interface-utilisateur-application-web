@@ -141,10 +141,7 @@
     text-align: center;
 }
 
-#meilleur-film .film-grille{
-    width: 329px;
-    margin: 0 auto;
-}
+
 
 /* Grille des films */
 .film-grille{
@@ -230,9 +227,7 @@
     display: none;
 }
 
-.genre, .image-film, .selecteur-block {
-    border: 1px dashed red; /* Aide à visualiser les dimensions */
-}
+
 
 .genre {
     appearance: none;    
@@ -267,7 +262,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -292,7 +288,7 @@
 
 /* Style pour la fenêtre modale*/
 .modale{
-    /*display: none;*/
+    display: block;
     position: fixed;
     top: 0;
     left: 0;
@@ -345,8 +341,7 @@
     border: none;
     background: none;    
     position: absolute;
-    cursor: pointer;
-    display: visible; 
+    cursor: pointer;     
     top: 0;
     right: 0;
     padding: 5px;  
@@ -426,7 +421,217 @@
     margin-top: auto;
     width: 214px;
     height: 36px;
-    line-height: 1;
-   
+    line-height: 1;  
+}
 
+@media (min-width: 768px) {
+    .sous-en-tête{
+        width: 619px;
+        
+    }
+
+    #logo{
+        width: 165px;
+        height: 113px;
+        margin: 0;
+    }
+
+    .en-tête-texte{display: block;
+        font-size: 40px;
+        font-weight: 300;
+        margin-left: 40px;
+    }
+
+    #meilleur-film h2{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .meilleur-film-block{
+        display: flex;
+        flex-direction: row;       
+        width: 618px;
+        height: 271px;
+        padding: 15px;
+    }
+
+    .meilleur-film-image{
+        width: 168px;
+        height: 246px;
+        margin-right: 20px;
+    }
+
+    .meilleur-film-détails{
+        margin-top: 0;
+        
+    }
+
+    .meilleur-film-titre{
+        font-size: 40px;
+        margin-top: 0;
+    }
+
+    .meilleur-film-resume{
+        font-size: 24px;
+        margin-bottom: 0;
+    }
+
+    .meilleur-film-boutton {
+        width: 123px;
+        height: 49px;
+        margin-right: 10px;
+        margin-bottom: 9px;
+        font-size: 20px;
+        margin-top: -10px;
+    }
+
+    .catégorie-titre{
+        font-size: 40px;
+        text-align: left;
+    }
+
+    .film-grille{
+        grid-template-columns: repeat(2, 295px);
+    }
+
+    .fiche-de-film{
+        width: 100%;
+        margin: 0;       
+        
+    }
+    .image-film{
+        width: 100%;
+    }
+
+    .overlay{
+        width: 100%;
+    }
+
+    .titre-autres {
+        display: block;
+        margin-right: 10px;
+        
+    }
+
+    .selecteur-block{
+        display: flex;       
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0;
+    }
+
+    .modale{
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 1024px) {
+    .sous-en-tête{
+        width: 837px;
+        height: 122px;        
+    }
+
+    #logo {
+        width: 127px;
+        height: 94px;
+        margin-right: 30px;
+    }
+
+    .en-tête-texte{
+        margin-left: 20px;
+    }
+
+    #meilleur-film h2 {
+        font-size: 48px;
+    }
+
+    .meilleur-film-block{
+        display: flex;
+        flex-direction: row;       
+        width: 835px;
+        height: 369px;
+        padding: 15px;
+    }    
+
+    .meilleur-film-image{
+        width: 227px;
+        height: 334px;        
+    }
+
+    .meilleur-film-titre{
+        font-size: 48px;     
+    }
+
+    .meilleur-film-resume{
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .catégorie-titre{
+        font-size: 48px;        
+    }
+
+    .film-grille{
+        grid-template-columns: repeat(3, 255px);
+    }
+
+    .fiche-de-film{
+        width: 100%;
+        margin: 0;       
+        
+    }
+    .image-film{
+        width: 100%;
+    }
+
+    .overlay{
+        width: 100%;
+    }
+
+    .conteneur-boutton{
+        display: none;
+    }
+
+    .modale{
+        display: flex;     
+        justify-content: center;
+        align-items: flex-start;
+        
+    }
+    
+    .modale-contenu{
+        overflow-y: hidden;
+        display: flex;
+        width: 778px;
+        height: 939px;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .modale-haut{       
+        justify-content: space-between;        
+        align-items: flex-start       
+    }
+
+    .modale-image{
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        width: 227px;
+        height: 334px;        
+    }
+
+    .modale-description{
+        margin-top: 80px;
+    }
+
+    .modale-fermer{
+        display: none;
+    }
+
+    
 }
