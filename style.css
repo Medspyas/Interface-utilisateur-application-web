@@ -43,13 +43,13 @@
 
 
 /* Titre meilleur film */
-#meilleur-film h2 {
+.meilleur-film-categorie{
     font-family: 'Oswald',sans-serif;
     font-weight: 600;
     font-size: 32px;
     color:#000000;
-    margin-top: 30px !important;    
-    margin-bottom: 15px !important;
+    margin-top: 30px ;    
+    margin-bottom: 15px ;
     text-align: center;
 }
 
@@ -58,12 +58,12 @@
 .meilleur-film-block{    
     width: 329px;    
     height: 463px;
-    border: 6px solid #000000 !important;    
+    border: 6px solid #000000 ;    
     background-color: #FFFFFF;  
     align-items: center;        
     max-width: 837px;
     margin: 0 auto 40px auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
     padding:10px;
     display: flex;
     flex-direction: column;
@@ -153,6 +153,8 @@
     
       
 }
+
+
 
 /* Style des films individuels*/
 .fiche-de-film{
@@ -288,7 +290,7 @@
 
 /* Style pour la fenêtre modale*/
 .modale{
-    display: block;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -424,6 +426,11 @@
     line-height: 1;  
 }
 
+.hidden-film {
+    display: none !important;
+}
+
+
 @media (min-width: 768px) {
     .sous-en-tête{
         width: 619px;
@@ -442,7 +449,7 @@
         margin-left: 40px;
     }
 
-    #meilleur-film h2{
+    .meilleur-film-categorie{
         font-size: 40px;
         text-align: left;
     }
@@ -494,6 +501,9 @@
         grid-template-columns: repeat(2, 295px);
     }
 
+   
+
+
     .fiche-de-film{
         width: 100%;
         margin: 0;       
@@ -521,7 +531,7 @@
     }
 
     .modale{
-        display: block;
+        display: none;
     }
 
 
@@ -543,7 +553,7 @@
         margin-left: 20px;
     }
 
-    #meilleur-film h2 {
+    .meilleur-film-categorie {
         font-size: 48px;
     }
 
@@ -577,9 +587,12 @@
         grid-template-columns: repeat(3, 255px);
     }
 
+    
+
     .fiche-de-film{
         width: 100%;
-        margin: 0;       
+        margin: 0;
+        margin-bottom: 15px;       
         
     }
     .image-film{
@@ -595,7 +608,7 @@
     }
 
     .modale{
-        display: flex;     
+        display: none;     
         justify-content: center;
         align-items: flex-start;
         

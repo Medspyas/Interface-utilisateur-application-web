@@ -18,7 +18,8 @@
         </header>
         
         <section id="meilleur-film" class="mb-5">
-            <h2 class=" meilleur-film-titre">Meilleur film</h2>
+        
+            <h2 class="meilleur-film-categorie">Meilleur film</h2>
             <div class="  meilleur-film-block">                           
                 <img src="https://fastly.picsum.photos/id/662/200/300.jpg?hmac=jdGUtAdbjqLXAnuKsUBMfmHw-1uVMo7pgJZTdttSRb8" alt="Affcihe du meilleur film" class="meilleur-film-image">
                     
@@ -37,6 +38,8 @@
         <section>
             <h2 class="catégorie-titre">Films les mieux notés</h2>
             <div id="films-mieux-notés" class="film-grille">
+                
+                
                 <div class="fiche-de-film">
                     <img src="https://fastly.picsum.photos/id/507/200/300.jpg?hmac=v0NKvUrOWTKZuZFmMlLN_7-RdRgeF-qFLeBGXpufxgg" alt=" Affcihe du film 1" class="image-film">
                     <div class="overlay">
@@ -44,6 +47,7 @@
                         <button class="film-boutton">Détails</button>                    
                     </div>
                 </div>
+                
                 <div class="fiche-de-film">
                     <img src="https://fastly.picsum.photos/id/507/200/300.jpg?hmac=v0NKvUrOWTKZuZFmMlLN_7-RdRgeF-qFLeBGXpufxgg" alt=" Affcihe du film 2" class="image-film">
                     <div class="overlay">
@@ -82,7 +86,7 @@
             </div>
             <div class="conteneur-boutton">
                 <button id="voir-plus" class="voir-plus">Voir plus</button>
-                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
+                <button id="voir-moins" class="voir-plus">Voir moins</button>
             </div>          
         </section>
         
@@ -133,14 +137,14 @@
                 </div>
             </div>
             <div class="conteneur-boutton">
-                <button id="voir-plus" class="voir-plus">Voir plus</button>
-                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
+                <button id="voir-plus-comedie" class="voir-plus">Voir plus</button>
+                <button id="voir-moins-comedie" class="voir-plus" >Voir moins</button>
             </div>                  
         </section>
         <section class="catégorie mt-5">            
             <h2 class="catégorie-titre">Crime</h2>
             <div id="catégorie-crime" class="film-grille">
-                <div id="catégorie-crime" class="fiche-de-film">
+                <div class="fiche-de-film">
                     <img src="https://fastly.picsum.photos/id/1027/200/300.jpg?hmac=WCxdERZ7sgk4jhwpfIZT0M48pctaaDcidOi3dKSHJYY" alt=" Affcihe du film 1" class="image-film">
                     <div class="overlay">
                         <h3 class="titre-film">Titre du film 1</h3>
@@ -184,8 +188,8 @@
                 </div>
             </div>
             <div class="conteneur-boutton">
-                <button id="voir-plus" class="voir-plus">Voir plus</button>
-                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
+                <button id="voir-plus-crime" class="voir-plus">Voir plus</button>
+                <button id="voir-moins-crime" class="voir-plus">Voir moins</button>
             </div>            
         </section>
         <section class="catégorie mt-5">
@@ -245,14 +249,15 @@
                 </div>
             </div>
             <div class="conteneur-boutton">
-                <button id="voir-plus" class="voir-plus">Voir plus</button>
-                <button id="voir-moins" class="voir-plus" style="display: none;">Voir moins</button>
+                <button id="voir-plus-autre" class="voir-plus">Voir plus</button>
+                <button id="voir-moins-autre" class="voir-plus">Voir moins</button>
             </div>               
         </section>
         
     </div>
 
     <div class="modale" id="modale">
+    
         <div class="modale-contenu">            
             <div class="modale-haut">                
                 <h2 class="modale-titre">Titre du film</h2>
@@ -276,10 +281,10 @@
                         <strong>Avec:</strong><br> Lorem ipsum odor amet, consectetuer adipiscing elit. Habitant accumsan aliquam sagittis amet sollicitudin magna massa pretium. Mollis mattis lectus vel molestie morbi nostra dui massa feugiat.
                     </p>
                 </div>
-                <button class="modale-boutton">Fermer</button>            
+                <button class="modale-boutton">Fermer</button>             
         </div>
     </div>
     
-    <!--<script src="api.js"></script>--->
+    <script src="api.js" defer></script>
 </body>
 </html>
