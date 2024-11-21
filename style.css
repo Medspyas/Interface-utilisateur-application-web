@@ -1,6 +1,5 @@
-.container{
-    width: 100%;
-    max-width: 100%;
+.container{ 
+    width: 100%;   
     margin: 0 auto;
     padding: 0 10px;
     display: flex;
@@ -11,8 +10,7 @@
 
 /* Rectangle de fond avec bordure */
 .sous-en-tête{
-    background-color: #61787F;
-    max-width: 1000px;
+    background-color: #61787F;    
     width: 329px;
     height: 137px;
     border: 1px solid #000000 !important;
@@ -60,8 +58,7 @@
     height: 463px;
     border: 6px solid #000000 ;    
     background-color: #FFFFFF;  
-    align-items: center;        
-    max-width: 837px;
+    align-items: center;       
     margin: 0 auto 40px auto;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) ;
     padding:10px;
@@ -69,9 +66,7 @@
     flex-direction: column;
     
 }
- .meilleur-film-boutton{
-    text-align: center;
- }
+
 
  .meilleur-film-détails{
     text-align: center;
@@ -82,7 +77,8 @@
 .meilleur-film-image{
     width: 298px;
     height: 241px;  
-    object-fit: cover;      
+    object-fit: cover; 
+    
    }
 
    
@@ -145,13 +141,9 @@
 
 /* Grille des films */
 .film-grille{
-    width: 100%;
-    max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr;    
-    gap: 20px;  
-    
-      
+    gap: 20px; 
 }
 
 
@@ -169,7 +161,8 @@
 .image-film {
     width: 329px;
     aspect-ratio: 4/4;
-    object-fit: cover;      
+    object-fit: cover;
+   
 
 }
 
@@ -217,10 +210,8 @@
 }
 
 .selecteur-block{
-    position: relative;    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    position: relative;   
+    align-items: center;   
     width: 285px;
     margin: auto;
 }
@@ -239,17 +230,14 @@
     font-size: 36px;
     font-weight: 500;
     color: #000000;
-    border: 1px solid #000000;    
-    position: relative;
-    line-height: 1;
-    box-sizing: border-box; 
-    display: inline-block;     
-    
+    border: 1px solid #000000;
+    cursor: pointer;
+    padding-left: 15px !important;
 }
 
 .triangle{
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 50%;
     transform: translateY(-100%);
     width: 0;
@@ -261,7 +249,6 @@
 }
 
 .conteneur-boutton{
-    display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 15px;
@@ -278,8 +265,7 @@
     font-weight: 500;
     text-align: center;
     border: none;
-    border-radius: 25px;
-    display: flex;
+    border-radius: 25px;    
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -302,7 +288,7 @@
     z-index: 1000;  
 }
 
-.modale-contenu{
+.modale-contenu{    
     position: relative;
     background-color: #FFFFFF;
     padding: 20px;
@@ -319,10 +305,8 @@
 
 }
 
-.modale-haut {    
-    justify-content: space-between;
+.modale-haut {   
     width: 100%;
-    align-items: flex-start;
     text-align: left;
     margin-bottom: 20px;    
 }
@@ -354,8 +338,14 @@
     width: 409px;
     height: 602px;
     object-fit: cover;
-    text-align: center;
+    text-align: center;   
         
+}
+
+.modale-image img {
+    object-fit: cover;
+    width: 409px; 
+    height: 602px;
 }
 
 
@@ -426,9 +416,7 @@
     line-height: 1;  
 }
 
-.hidden-film {
-    display: none !important;
-}
+
 
 
 @media (min-width: 768px) {
@@ -466,6 +454,9 @@
         width: 168px;
         height: 246px;
         margin-right: 20px;
+        background-image: url("assets/bobine_film.jpg");
+        background-size: cover;
+        background-position: center;   
     }
 
     .meilleur-film-détails{
@@ -511,6 +502,9 @@
     }
     .image-film{
         width: 100%;
+        background-image: url("assets/bobine_film.jpg");
+        background-size: cover;
+        background-position: center;   
     }
 
     .overlay{
@@ -524,8 +518,8 @@
     }
 
     .selecteur-block{
-        display: flex;       
-        justify-content: flex-start;
+              
+        
         align-items: center;
         margin: 0;
     }
@@ -567,8 +561,10 @@
 
     .meilleur-film-image{
         width: 227px;
-        height: 334px;        
+        height: 334px;                 
     }
+
+   
 
     .meilleur-film-titre{
         font-size: 48px;     
@@ -596,50 +592,49 @@
         
     }
     .image-film{
-        width: 100%;
+        width: 100%;      
     }
 
-    .overlay{
-        width: 100%;
-    }
-
+    
     .conteneur-boutton{
         display: none;
     }
 
     .modale{
         display: none;     
-        justify-content: center;
-        align-items: flex-start;
-        
+        justify-content: center;     
     }
     
     .modale-contenu{
-        overflow-y: hidden;
+        overflow-y: auto;
         display: flex;
         width: 778px;
         height: 939px;
         box-sizing: border-box;
         flex-direction: column;
-        align-items: flex-start;
+        
         position: relative;
     }
 
-    .modale-haut{       
-        justify-content: space-between;        
-        align-items: flex-start       
-    }
+    
 
     .modale-image{
         position: absolute;
-        top: 20px;
-        right: 0px;
+        top: 10px;
+        right: 10px;
         width: 227px;
-        height: 334px;        
+        height: 334px;
+        object-fit: cover;      
+    }
+
+    .modale-image img {
+        width: 227px;
+        height: 334px;
+        object-fit: cover;  
     }
 
     .modale-description{
-        margin-top: 80px;
+        margin-top: 90px;
     }
 
     .modale-fermer{
