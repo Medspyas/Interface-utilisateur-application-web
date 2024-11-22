@@ -8,7 +8,7 @@
 }
 
 
-/* Rectangle de fond avec bordure */
+/* Style de l'entête */
 .sous-en-tête{
     background-color: #61787F;    
     width: 329px;
@@ -26,7 +26,7 @@
     margin: 0 auto;
 }
 
-/* Texte de l'en-tête*/
+
 .en-tête-texte{
     font-size: 40px;
     font-family: 'Oswald' , sans-serif;
@@ -39,8 +39,7 @@
 }
 
 
-
-/* Titre meilleur film */
+/* Style de la section meilleur film */
 .meilleur-film-categorie{
     font-family: 'Oswald',sans-serif;
     font-weight: 600;
@@ -73,18 +72,13 @@
     margin-top: 20px;
  }
  
-/*Syle image du film*/
+
 .meilleur-film-image{
     width: 298px;
     height: 241px;  
-    object-fit: cover; 
-    
+    object-fit: cover;     
    }
 
-   
-
- 
-/* Titre du film */
 .meilleur-film-titre{
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
@@ -95,7 +89,6 @@
     text-align: left;    
     }
 
-/* resume du film */
 .meilleur-film-resume{
     min-height: 80px;
     font-family: 'Oswald', sans-serif;
@@ -108,7 +101,6 @@
 }
 
 
-/* Boutton détails*/
 .meilleur-film-boutton{        
     font-family: 'Oswald', sans-serif;
     font-size: 14px;
@@ -128,7 +120,7 @@
     margin: 0 auto;
 }
 
-/* Titre films mieux notés */
+/* Section films mieux notés et catégories */
 .catégorie-titre{
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
@@ -138,8 +130,6 @@
 }
 
 
-
-/* Grille des films */
 .film-grille{
     display: grid;
     grid-template-columns: 1fr;    
@@ -147,8 +137,6 @@
 }
 
 
-
-/* Style des films individuels*/
 .fiche-de-film{
     position: relative;
     width: 329px;       
@@ -157,11 +145,12 @@
 
 }
 
-/* Image du film */
+
 .image-film {
     width: 329px;
     aspect-ratio: 4/4;
     object-fit: cover;
+    
    
 
 }
@@ -185,7 +174,7 @@
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     font-size: 24px;
-    margin:20px 0 0 5px;
+    margin:0;
     align-self: flex-start; 
     padding-left: 10px;
 }
@@ -209,6 +198,7 @@
     text-align: center;
 }
 
+/* Menu selecteur de la catégorie autre */
 .selecteur-block{
     position: relative;   
     align-items: center;   
@@ -219,8 +209,6 @@
 .titre-autres {
     display: none;
 }
-
-
 
 .genre {
     appearance: none;    
@@ -248,6 +236,7 @@
     pointer-events: none;
 }
 
+/* bouton voir-plus, voir-moins des sections films mieux notés et catégories */
 .conteneur-boutton{
     justify-content: center;
     align-items: center;
@@ -453,10 +442,7 @@
     .meilleur-film-image{
         width: 168px;
         height: 246px;
-        margin-right: 20px;
-        background-image: url("assets/bobine_film.jpg");
-        background-size: cover;
-        background-position: center;   
+        margin-right: 20px;          
     }
 
     .meilleur-film-détails{
@@ -480,7 +466,7 @@
         margin-right: 10px;
         margin-bottom: 9px;
         font-size: 20px;
-        margin-top: -10px;
+        margin-top: 15px;
     }
 
     .catégorie-titre{
@@ -492,9 +478,6 @@
         grid-template-columns: repeat(2, 295px);
     }
 
-   
-
-
     .fiche-de-film{
         width: 100%;
         margin: 0;       
@@ -502,13 +485,15 @@
     }
     .image-film{
         width: 100%;
-        background-image: url("assets/bobine_film.jpg");
-        background-size: cover;
-        background-position: center;   
+         
     }
 
     .overlay{
         width: 100%;
+    }
+
+    .titre-film{        
+        margin-top: 0;
     }
 
     .titre-autres {
@@ -595,6 +580,9 @@
         width: 100%;      
     }
 
+   .titre-film{
+    margin-top: 0;
+   }
     
     .conteneur-boutton{
         display: none;
@@ -611,8 +599,7 @@
         width: 778px;
         height: 939px;
         box-sizing: border-box;
-        flex-direction: column;
-        
+        flex-direction: column;        
         position: relative;
     }
 

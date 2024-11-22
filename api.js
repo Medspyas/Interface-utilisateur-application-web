@@ -200,11 +200,11 @@ document.querySelector(".modale-fermer").addEventListener("click", () =>{
 window.addEventListener("click", (event) =>{
     const modale = document.getElementById("modale");
     if (event.target === modale){
-        modale.style.display= "none";
+        modale.style.display = "none";
     }
 });
 
-
+// Fonction permettant les interactions boutons voir-plus, voir-moins.
 function gererBoutonsVoirPlus() {
     // Tableau de paires ID pour chaque section de films
     const sections = [
@@ -222,7 +222,7 @@ function gererBoutonsVoirPlus() {
         const films = Array.from(filmsContainer.children);
 
        
-
+        // Foncition qui masque les films par defaut en fonction de la taille d'écran.
         function masquerFilmsSupplementaires() {
             let filmsAffiches = 2; // Par défaut,  2 films
         
@@ -231,7 +231,7 @@ function gererBoutonsVoirPlus() {
             }
             
             if (window.matchMedia("(min-width: 1024px)").matches) {
-                filmsAffiches = films.length; 
+                filmsAffiches = films.length; // pour les écrans pc 6 films
             }
         
            
@@ -256,12 +256,14 @@ function gererBoutonsVoirPlus() {
             }
         }
 
+        // Fonction qui active le bouton voir-plus
         function voirPlus() {
             films.forEach(film => (film.style.display = "block"));
             voirBoutonPlus.style.display = "none";
             voirBoutonMoins.style.display = "block";
         }
 
+        // Fonction qui active le bouton voir-moins
         function voirMoins() {
             masquerFilmsSupplementaires();
         }
@@ -275,7 +277,7 @@ function gererBoutonsVoirPlus() {
 }
 
 
-
+// fonction qui va initialiser les fonctions catégorie et la fonction bouton.
 async function chargerToutesLesCategories() {
     await chargerFilmsParCategorie("comedy", "#catégorie-comedie");
     await chargerFilmsParCategorie("crime", "#catégorie-crime");
@@ -284,11 +286,13 @@ async function chargerToutesLesCategories() {
     gererBoutonsVoirPlus();
 }
 
+// initialisation du selecteur menu et la catégorie autre.
 document.getElementById("selecteur-de-catégorie").addEventListener("change", async (event) => {
     const categorie = event.target.value;
     await chargerFilmsParCategorie(categorie, "#films-autres");
     gererBoutonsVoirPlus();
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
     
